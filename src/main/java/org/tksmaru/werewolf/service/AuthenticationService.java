@@ -8,20 +8,23 @@ import org.scribe.model.Verifier;
 import org.scribe.oauth.OAuthService;
 
 /**
- * TwitterのOAuth認証プロバイダのラッパー
+ * AmebaのOAuth認証プロバイダのラッパー
  * 
  * @author maruyama
- * 
+ * @deprecated TODO 利用不可。クラス構成見直し中。
  */
 public class AuthenticationService {
 
 	private OAuthService service;
 
 	public AuthenticationService() {
-		service = new ServiceBuilder().provider(TwitterApi.class)
-				.apiKey("MIv9FEmDbhsY9KmrP7HKw")
-				.apiSecret("TwpdMcGcCUA63StBO3gQMC3Q8RSI6FngEuhnS0uczE")
-				.callback("http://127.0.0.1:8888/werewolf/callback").build();
+		service = new ServiceBuilder()
+				.provider(TwitterApi.class)
+				.apiKey("a9fa21c38519232bbc6bd4e2a9ac82b1d9107876670664f2904a72dcae631360")
+				.apiSecret(
+						"a0d16d3afdb1f66f2af1dda2319f245dee26f0c4ee1811c3d7c6f7cdbd0021f5")
+				.callback("http://127.0.0.1:8888/werewolf/amebacallback")
+				.build();
 	}
 
 	public String getAuthUrl(Token requestToken) {

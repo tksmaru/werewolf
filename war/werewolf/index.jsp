@@ -9,9 +9,12 @@
 <title>werewolf Index</title>
 </head>
 <body>
-<p>Hello werewolf Index !!!</p>
-<form action="login">
-    <input type="submit" value="login with twitter account">
-</form>
+  <p>Hello werewolf Index !!!</p>
+  <form action="login">
+    <input type="submit" value="login with twitter">
+  </form>
+  <form action="amebaLogin">
+    <input type="submit" value="login with ameba">
+  </form>
 </body>
 </html>

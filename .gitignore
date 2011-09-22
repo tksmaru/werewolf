@@ -1,0 +1,9 @@
+bin/*
+target/*
+war/WEB-INF/classes/*
+*.class
+*.jar
+.settings/*
+.project
+.classpath
+.factorypath

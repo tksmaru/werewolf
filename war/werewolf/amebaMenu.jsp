@@ -7,26 +7,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>werewolf Menu</title>
+<title>ameba Menu</title>
 </head>
 <body>
-  <p>ようこそ ${sessionScope.user.screenName}</p>
-  <img src="${sessionScope.user.profileImageURL}">
+  <p>ようこそ ${sessionScope.profile.nickname}</p>
+  <img src="${sessionScope.profile.mainPictureUrl}">
 
-  <form action="test">
-    <input type="submit" value="test" />
-  </form>
-  <table>
-    <c:forEach var="status" items="${requestScope.statusList}">
-      <tr>
-        <td><fmt:formatDate value="${status.createdAt}"
-            pattern="yyyy/MM/dd HH:mm:ss" />
-        </td>
-        <td><c:out value="${status.text}" />
-        </td>
-      </tr>
-    </c:forEach>
-  </table>
   <form action="logout">
     <input type="submit" value="logout" />
   </form>
