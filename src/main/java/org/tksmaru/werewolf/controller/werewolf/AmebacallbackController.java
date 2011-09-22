@@ -45,7 +45,7 @@ public class AmebacallbackController extends Controller {
 		printWriter.close();
 
 		BufferedReader reader = new BufferedReader(new InputStreamReader(
-				urlconn.getInputStream()));
+				urlconn.getInputStream(), "UTF-8"));
 		/*
 		 * StringBuilder responseBody = new StringBuilder();
 		 * 
@@ -68,7 +68,7 @@ public class AmebacallbackController extends Controller {
 		// conn.connect();
 
 		BufferedReader reader2 = new BufferedReader(new InputStreamReader(
-				conn.getInputStream()));
+				conn.getInputStream(), "UTF-8"));
 /*
 		while (true) {
 			String line = reader2.readLine();
